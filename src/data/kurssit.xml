@@ -5,27 +5,22 @@
 	<department name="Matematiikan ja systeemianalyysin laitos" noppa="20">
 		<course noppa="10" code="Mat-1.1110">
 			<name>Matematiikan peruskurssi C1</name>
-			<link>https://noppa.aalto.fi/noppa/kurssi/mat-1.1110/etusivu</link>
 		</course>
 		<course noppa="10" code="Mat-1.1120">
 			<name>Matematiikan peruskurssi C2</name>
-			<link>https://noppa.aalto.fi/noppa/kurssi/mat-1.1120/etusivu</link>
 		</course>
 	</department>
 
 	<department name="Tietotekniikan laitos" noppa="16">
 		<course noppa="10" code="T-106.1250">
 			<name>Informaatioverkostojen ohjelmointikurssi</name>
-			<link>https://noppa.aalto.fi/noppa/kurssi/t-106.1250/etusivu</link>
 		</course>
 		
 		<course noppa="2" code="T-106.1111">
 			<name>Johdatus opiskeluun ja tietojärjestelmiin</name>
-			<link>https://noppa.aalto.fi/noppa/kurssi/t-106.1111/etusivu</link>
 		</course>
 		<course noppa="4" code="T-106.2001">
 			<name>Informaatioverkostot: Studio 1</name>
-			<link></link>
 		</course>
 		
 	</department>
@@ -33,44 +28,36 @@
 	<department name="Kauppakorkeakoulu" noppa="4">
 		<course noppa="4" code="T71C00800">
 			<name>Viestinnän ja mediatutkimuksen perusteet</name>
-			<link></link>
 		</course>
 	</department>
 
 	<department name="Mediatekniikan laitos" noppa="10">
 		<course noppa="3" code="T-111.1100">
 			<name>Digitaalisen median työvälineet</name>
-			<link></link>
 		</course>
 		<course noppa="2" code="T-75.2300">
 			<name>Informaatioverkostot: Studio 2</name>
-			<link></link>
 		</course>
 		<course noppa="5" code="Inf-0.1220">
 			<name>Sosiologia</name>
-			<link></link>
 		</course>
 	</department>
 
 	<department name="Tuotantotalouden laitos" noppa="7">
 		<course noppa="4" code="TU-22.1101">
 			<name>Tuotantotalouden peruskurssi</name>
-			<link></link>
 		</course>
 		<course noppa="3" code="TU-91.2500">
 			<name>Marketing</name>
-			<link></link>
 		</course>
 	</department>
 
 	<department name="Kielikeskus" noppa="2">
 		<course noppa="1" code="Kie-98.5001/7001">
 			<name>Toisen kotimaisen kielen kokeen (ruotsi/suomi) kirjallinen osio</name>
-			<link></link>
 		</course>
 		<course noppa="1" code="Kie-98.5002/7002">
 			<name>Toisen kotimaisen kielen kokeen (ruotsi/suomi) suullinen osio</name>
-			<link></link>
 		</course>
 	</department>
 
@@ -83,26 +70,21 @@
 	<department name="Matematiikan ja systeemianalyysin laitos" noppa="5">
 		<course noppa="5" code="Mat-1.1110">
 			<name>Matematiikan peruskurssi C3-I</name>
-			<link></link>
 		</course>
 	</department>
 
 	<department name="Tietotekniikan laitos" noppa="15">
 		<course noppa="5" code="T-121.2100">
 			<name>Johdatus käyttäjäkeskeiseen tuotekehitykseen</name>
-			<link></link>
 		</course>
 		<course noppa="3" code="T-121.3110">
 			<name>Käyttäjäkeskeisen tuotekehityksen harjoitustyöt</name>
-			<link></link>
 		</course>
 		<course noppa="3" code="T-110.1100">
 			<name>Johdatus tietoliikenteeseen ja multimediatekniikkaan</name>
-			<link></link>
 		</course>
 		<course noppa="4" code="T-76.3601" id="optional" dupe="Havaitseminen">
 			<name>Introduction to Software Engineering</name>
-			<link></link>
 		</course>
 		
 	</department>
@@ -111,27 +93,21 @@
 
 		<course noppa="3" code="T-75.1110">
 			<name>XML-kuvauskielten perusteet</name>
-			<link></link>
 		</course>
 		<course noppa="4" code="T-75.4900" id="optional" dupe="Introduction to Software Engineering">
 			<name>Havaitseminen</name>
-			<link></link>
 		</course>
 		<course noppa="5" code="T-111.2211">
 			<name>Informaatioverkostot: Studio 4</name>
-			<link></link>
 		</course>
 		<course noppa="5" code="Inf-0.1202">
 			<name>Filosofia</name>
-			<link></link>
 		</course>
 		<course noppa="5" code="Inf-0.1300">
 			<name>Estetiikka</name>
-			<link></link>
 		</course>
 		<course noppa="3" code="Inf-0.3101 ">
 			<name>Verkostojen perusteet</name>
-			<link></link>
 		</course>
 	</department>
 
@@ -139,23 +115,18 @@
 
 		<course noppa="4" code="TU-53.1010">
 			<name>Työpsykologian ja johtamisen perusteet</name>
-			<link></link>
 		</course>
 		<course noppa="4" code="TU-53.1030">
 			<name>Knowledge and competence management</name>
-			<link></link>
 		</course>
 		<course noppa="4" code="TU-22.2600">
 			<name>Informaatioverkostot: Studio 3</name>
-			<link></link>
 		</course>
 		<course noppa="3" code="TU-22.1120">
 			<name>Projektien suunnittelu ja ohjaus</name>
-			<link></link>
 		</course>
 		<course noppa="3" code="TU-22.1130">
 			<name>Laskentatoimi ja kannattavuus</name>
-			<link></link>
 		</course>
 
 	</department>

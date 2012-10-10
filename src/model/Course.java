@@ -21,11 +21,6 @@ public class Course extends CourseHierarchyNode {
 	 */
 	@XmlElement
 	String name;
-	/**
-	 * Web page URL for the course information site.
-	 */
-	@XmlElement
-	URL url;
 
 	@Override
 	public List<CourseHierarchyNode> getChildren() {
