@@ -19,5 +19,13 @@ public abstract class CourseHierarchyNode {
 	}
 
 	public abstract List<? extends CourseHierarchyNode> getChildren();
+		
+	public int getWeight() {
+		int weight = 0;
+		for(CourseHierarchyNode child : this.getChildren()) {
+			weight += child.getWeight();
+		}
+		return weight;
+	}
 
 }

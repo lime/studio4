@@ -47,4 +47,10 @@ public class Department extends CourseHierarchyNode {
 	public String getName() {
 		return this.name;
 	}
+
+	@Override
+	public int getWeight() {
+		// TODO Auto-generated method stub
+		return 0;
+	}
 }
