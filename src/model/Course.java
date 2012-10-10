@@ -26,4 +26,9 @@ public class Course extends CourseHierarchyNode {
 	public List<CourseHierarchyNode> getChildren() {
 		return null;
 	}
+
+	@Override
+	public int getWeight() {
+		return this.ectsCredits;
+	}
 }
