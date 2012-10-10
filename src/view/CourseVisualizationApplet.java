@@ -26,8 +26,10 @@ public class CourseVisualizationApplet extends PApplet {
 
 		this.fill(22, 220, 230);
 		this.drawCircle(courseData);
-
+		rect(598, 50, 200, 500, 20, 20);
+		this.drawCircles(courseData);
 	}
+	
 
 	private void drawCircles(CourseHierarchyNode data) {
 	}
