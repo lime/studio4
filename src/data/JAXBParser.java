@@ -45,7 +45,7 @@ public class JAXBParser {
 				.getCourseHierarchy("src/data/kurssit.xml");
 
 		while (xml != null) {
-			System.out.println(xml);
+			System.out.println(xml.getWeight());
 			xml = xml.getChild(0);
 		}
 	}
