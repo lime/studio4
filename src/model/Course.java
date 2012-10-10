@@ -1,9 +1,11 @@
 package model;
 
 import java.net.URL;
+import java.util.List;
+
 import javax.xml.bind.annotation.*;
 
-public class Course {
+public class Course extends CourseHierarchyNode {
 	/**
 	 * Number of ECTS credits granted for the course.
 	 */
@@ -24,4 +26,9 @@ public class Course {
 	 */
 	@XmlElement
 	URL url;
+
+	@Override
+	public List<CourseHierarchyNode> getChildren() {
+		return null;
+	}
 }

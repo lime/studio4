@@ -5,7 +5,7 @@ import java.util.List;
 
 import javax.xml.bind.annotation.*;
 
-public class Department {
+public class Department extends CourseHierarchyNode {
 	/**
 	 * Name of the department.
 	 */
@@ -21,6 +21,11 @@ public class Department {
 	 */
 	@XmlElement(name = "course")
 	private List<Course> courses = new ArrayList<Course>();
+
+	@Override
+	public List<Course> getChildren() {
+		return this.getCourses();
+	}
 
 	/**
 	 * @return the courses

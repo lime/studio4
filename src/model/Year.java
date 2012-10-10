@@ -5,7 +5,7 @@ import java.util.List;
 
 import javax.xml.bind.annotation.*;
 
-public class Year {
+public class Year extends CourseHierarchyNode {
 	/**
 	 * Year identifier, usually number in order.
 	 */
@@ -21,6 +21,11 @@ public class Year {
 	 */
 	@XmlElement(name = "department")
 	private List<Department> departments = new ArrayList<Department>();
+
+	@Override
+	public List<Department> getChildren() {
+		return this.getDepartments();
+	}
 
 	public List<Department> getDepartments() {
 		return this.departments;

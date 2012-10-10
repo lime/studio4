@@ -10,7 +10,7 @@ import javax.xml.bind.annotation.*;
  * 
  */
 @XmlRootElement(name = "studies")
-public class StudyProgram {
+public class StudyProgram extends CourseHierarchyNode {
 	/**
 	 * The name of the study program.
 	 */
@@ -22,6 +22,11 @@ public class StudyProgram {
 	 */
 	@XmlElement(name = "year")
 	private List<Year> years = new ArrayList<Year>();
+
+	@Override
+	public List<Year> getChildren() {
+		return this.getYears();
+	}
 
 	public String getName() {
 		return this.name;
