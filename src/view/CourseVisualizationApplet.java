@@ -12,6 +12,7 @@ public class CourseVisualizationApplet extends PApplet {
 	@Override
 	public void draw() {
 		this.background(255);
+		ellipse(20, 20, 20, 20);
 	}
 
 	@Override
