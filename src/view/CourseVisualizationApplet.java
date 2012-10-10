@@ -17,7 +17,6 @@ public class CourseVisualizationApplet extends PApplet {
 
 	@Override
 	public void setup() {
-		this.size(DEFAULT_WIDTH, DEFAULT_HEIGHT);
 		this.size(800, 600);
 	}
 	
