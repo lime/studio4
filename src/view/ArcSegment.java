@@ -2,6 +2,7 @@ package view;
 
 import java.util.LinkedList;
 import java.util.List;
+import java.util.Random;
 
 import processing.core.PApplet;
 
@@ -63,15 +64,27 @@ class ArcSegment {
 		}
 	}
 
-	void drawSegment(PApplet applet) {
-		System.out.println("ArcSegment.drawSegment() SIZE: " + this.children.size());
-		System.out.println("ArcSegment.drawSegment() angle from " + this.start +" to "+this.stop+" at level "+this.level);
+	void drawSegment(CourseVisualizationApplet applet) {
+		//System.out.println("ArcSegment.drawSegment() SIZE: " + this.children.size());
+		//System.out.println("ArcSegment.drawSegment() angle from " + this.start +" to "+this.stop+" at level "+this.level);
 		for (ArcSegment child : this.children) {
 			child.drawSegment(applet);
 		}
-		applet.fill(this.colorHue, this.colorSat, /*(this.level+2) * 40*/255);
+		//check for hover
+		this.checkHover(applet);
+		if(this.data.equals(applet.getSelected())){
+			applet.fill(this.colorHue, 255, 255);
+		} else {
+			applet.fill(this.colorHue, this.colorSat, (this.level+2) * 40);
+		}
 		applet.noStroke();
 		applet.arc(this.x, this.y, this.size, this.size, PApplet.radians(this.start),
 				PApplet.radians(this.stop));
+	}
+
+	private void checkHover(CourseVisualizationApplet applet) {
+		if(new Random().nextDouble() < 0.0005) { //FIXME if mouse over
+			applet.setSelected(this.data);
+		}
 	}
 }

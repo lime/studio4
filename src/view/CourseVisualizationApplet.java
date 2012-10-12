@@ -110,4 +110,14 @@ public class CourseVisualizationApplet extends PApplet {
 		courseSegment = new ArcSegment(this.courseData, 0, 0, ArcSegment.ARC_SIZE, start,
 				stop, colorHue, colorSat, 0);
 	}
+
+
+	CourseHierarchyNode getSelected() {
+		return this.selectedNode;
+	}
+
+
+	void setSelected(CourseHierarchyNode node) {
+		this.selectedNode = node;
+	}
 }
