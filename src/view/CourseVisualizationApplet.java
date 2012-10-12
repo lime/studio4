@@ -21,6 +21,8 @@ public class CourseVisualizationApplet extends PApplet {
 	private CourseHierarchyNode courseData;
 	private CourseHierarchyNode selectedNode;
 
+	private ArcSegment courseSegment;
+
 	@Override
 	public void draw() {
 
@@ -42,10 +44,10 @@ public class CourseVisualizationApplet extends PApplet {
 
 		this.fill(22, 220, 230);
 		this.drawInfobox(selectedNode);
-
-		this.drawCircle(courseData);
-
-		this.drawCircle(courseData);
+		this.pushMatrix();
+		this.translate(width/3, height/2);
+		this.courseSegment.drawSegment(this);
+		this.popMatrix();
 	}
 
 
@@ -60,8 +62,10 @@ public class CourseVisualizationApplet extends PApplet {
 		if (title == null) {
 			title = "Untitled";
 		}
+
 		this.fill(0);
 		this.text(title, 5, 20, 174, 490);
+
 		// reset matrix
 		this.popMatrix();
 	}
@@ -71,6 +75,8 @@ public class CourseVisualizationApplet extends PApplet {
 
 	void drawCircle(CourseHierarchyNode parentNode) {
 
+		
+		
 		float edellinenKulma = 0;
 		List<? extends CourseHierarchyNode> children = parentNode.getChildren();
 		for (int i = 0; i < children.size(); i++) {
@@ -90,9 +96,18 @@ public class CourseVisualizationApplet extends PApplet {
 	@Override
 	public void setup() {
 		this.size(800, 600);
+		this.colorMode(HSB);
+		
+		int size = 200;
+		int start = 0;
+		int stop = 360;
+		int colorHue = 0;
+		int colorSat = 255;
 
 		this.courseData = JAXBParser.getCourseHierarchy(DATA_FILENAME);
 		this.selectedNode = this.courseData;
-		this.size(800, 600);
+		
+		courseSegment = new ArcSegment(this.courseData, 0, 0, size, size, start,
+				stop, colorHue, colorSat, 0);
 	}
 }
