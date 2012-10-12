@@ -39,8 +39,7 @@ public class Course extends CourseHierarchyNode {
 
 	@Override
 	public String getDescription() {
-		// TODO Auto-generated method stub
-		return null;
+		return "Kurssikoodi: " + this.courseCode + "\nKurssin nimi: " + this.name + "\nOpintopisteet: " + this.ectsCredits;
 	}
 
 	@Override
