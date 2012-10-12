@@ -30,10 +30,10 @@ public class CourseVisualizationApplet extends PApplet {
 		// draw infobox
 
 		
-		PFont fontA = loadFont("Arial");
-		textFont(fontA, 12);
-		int x = 600;
-		text("Teksti", x, 100);
+//		PFont fontA = loadFont("Arial");
+//		textFont(fontA, 12);
+		textSize(12);
+		textAlign(CENTER);
 		fill(51);
 		
 		
@@ -60,8 +60,8 @@ public class CourseVisualizationApplet extends PApplet {
 		if (title == null) {
 			title = "Untitled";
 		}
-		this.fill(255);
-		this.text(title, 10, 10);
+		this.fill(0);
+		this.text(title, 5, 20, 174, 490);
 		// reset matrix
 		this.popMatrix();
 	}
