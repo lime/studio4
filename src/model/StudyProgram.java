@@ -39,8 +39,7 @@ public class StudyProgram extends CourseHierarchyNode {
 
 	@Override
 	public String getTitle() {
-		// TODO Auto-generated method stub
-		return null;
+		return this.name;
 	}
 
 	@Override
