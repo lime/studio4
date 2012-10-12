@@ -39,7 +39,8 @@ public class Course extends CourseHierarchyNode {
 
 	@Override
 	public String getDescription() {
-		return "Kurssikoodi: " + this.courseCode + "\nKurssin nimi: " + this.name + "\nOpintopisteet: " + this.ectsCredits;
+		return "Kurssikoodi: " + this.courseCode + "\nKurssin nimi: " + 
+				this.name + "\nOpintopisteet: " + this.ectsCredits;
 	}
 
 	@Override
