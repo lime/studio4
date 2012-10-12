@@ -8,6 +8,7 @@ import java.util.List;
 import data.JAXBParser;
 import model.CourseHierarchyNode;
 import processing.core.PApplet;
+import processing.core.PFont;
 
 /**
  *
@@ -25,7 +26,20 @@ public class CourseVisualizationApplet extends PApplet {
 
 		this.background(255);
 
+
 		// draw infobox
+
+		
+		PFont fontA = loadFont("Arial");
+		textFont(fontA, 12);
+		int x = 600;
+		text("Teksti", x, 100);
+		fill(51);
+		
+		
+		
+		rect(598, 50, 200, 500, 20, 20);
+
 		this.fill(22, 220, 230);
 		this.drawInfobox(selectedNode);
 
@@ -33,6 +47,7 @@ public class CourseVisualizationApplet extends PApplet {
 
 		this.drawCircle(courseData);
 	}
+
 
 	private void drawInfobox(CourseHierarchyNode displayNode) {
 		// save the current matrix state
