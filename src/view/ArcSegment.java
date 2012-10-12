@@ -9,24 +9,25 @@ import model.CourseHierarchyNode;
 
 class ArcSegment {
 
-	private static final int ARC_SIZE = 100;
+	static final int ARC_SIZE = 100;
 	private List<ArcSegment> children;
 	final int x, y; // arc origin
-	final int w, h; // arc size
+	final int size;
 	final int start, stop; // angle start and stop in degrees
 	final int colorHue;
 	final int colorSat;
 	final int level;
 	private int angleSize;
+	private CourseHierarchyNode data;
 
-	public ArcSegment(CourseHierarchyNode parentNode, int x, int y, int w,
-			int h, int start, int stop, int colorHue, int colorSat, int level) {
+	public ArcSegment(CourseHierarchyNode data, int x, int y, int size, int start, int stop, int colorHue, int colorSat, int level) {
 
+		this.data = data;
+		
 		this.children = new LinkedList<ArcSegment>();
 		this.x = x;
 		this.y = y;
-		this.w = w;
-		this.h = h;
+		this.size = size;
 		this.start = start;
 		this.stop = stop;
 		this.angleSize = Math.abs(this.start - this.stop);
@@ -34,55 +35,43 @@ class ArcSegment {
 		this.colorSat = colorSat;
 		this.level = level;
 
-		if (parentNode.hasChildren()) {
-			System.out.println("ArcSegment.ArcSegment() " + parentNode);
-			addChildren(parentNode);
+		if (this.data.hasChildren()) {
+			System.out.println("ArcSegment.ArcSegment() " + this.data);
+			addChildren(this.data);
 		}
 	}
 
 	private void addChildren(CourseHierarchyNode parentNode) {
 
-		int newSat = this.colorSat;
-		int newW = this.w + ARC_SIZE;
-		int newH = this.h + ARC_SIZE;
+		int newSat = this.colorSat + 50;
+		int newSize = this.size + ARC_SIZE;
 		int newStart = this.start;
 		int newStop = this.start;
+		int newHue = this.colorHue + 5;
 
 		// iterate through all child data and create arc segments for them
 		for (CourseHierarchyNode childData : parentNode.getChildren()) {
 			
 			float weightRelation = childData.getWeight() / (float) parentNode.getWeight();
-			int newAngleSize = Math.round( this.angleSize * weightRelation); //TODO
+			int newAngleSize = (int)Math.ceil( this.angleSize * weightRelation); //TODO
 			newStart = newStop;
 			newStop += newAngleSize;
-			int newHue = this.colorHue + 10;
+			newHue = (int) (newHue + 255 * weightRelation * this.angleSize / 360) % 255 ;
 
-			this.children.add(new ArcSegment(childData, this.x, this.y, newW,
-					newH, newStart, newStop, newHue, newSat, this.level + 1));
+			this.children.add(new ArcSegment(childData, this.x, this.y, newSize,
+					newStart, newStop, newHue, newSat, this.level + 1));
 		}
 	}
 
 	void drawSegment(PApplet applet) {
 		System.out.println("ArcSegment.drawSegment() SIZE: " + this.children.size());
-		for (ArcSegment child : this.children) {			
+		System.out.println("ArcSegment.drawSegment() angle from " + this.start +" to "+this.stop+" at level "+this.level);
+		for (ArcSegment child : this.children) {
 			child.drawSegment(applet);
 		}
-		applet.fill(this.colorHue, this.colorSat, 255);
-		applet.arc(this.x, this.y, this.w, this.h, PApplet.radians(this.start),
+		applet.fill(this.colorHue, this.colorSat, /*(this.level+2) * 40*/255);
+		applet.noStroke();
+		applet.arc(this.x, this.y, this.size, this.size, PApplet.radians(this.start),
 				PApplet.radians(this.stop));
 	}
-
-	/*void drawChildSegments(PApplet applet) {
-		for (int i = 0; i < children.size(); i++) {
-
-			float kulma = 2 * PI * children.get(i).getWeight()
-					/ parentNode.getWeight();
-			this.arc(400, 300, 250, 250, edellinenKulma, kulma);
-			fill(22, 220, 230);
-
-			edellinenKulma = 2 * PI * children.get(i).getWeight()
-					/ parentNode.getWeight();
-
-		}
-	}*/
 }

@@ -26,7 +26,7 @@ public class CourseVisualizationApplet extends PApplet {
 	@Override
 	public void draw() {
 
-		this.background(255);
+		this.background(0);
 
 
 		// draw infobox
@@ -97,17 +97,17 @@ public class CourseVisualizationApplet extends PApplet {
 	public void setup() {
 		this.size(800, 600);
 		this.colorMode(HSB);
+		this.smooth();
 		
-		int size = 200;
 		int start = 0;
 		int stop = 360;
-		int colorHue = 0;
-		int colorSat = 255;
+		int colorHue = 50;
+		int colorSat = 50;
 
 		this.courseData = JAXBParser.getCourseHierarchy(DATA_FILENAME);
 		this.selectedNode = this.courseData;
 		
-		courseSegment = new ArcSegment(this.courseData, 0, 0, size, size, start,
+		courseSegment = new ArcSegment(this.courseData, 0, 0, ArcSegment.ARC_SIZE, start,
 				stop, colorHue, colorSat, 0);
 	}
 }
