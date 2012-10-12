@@ -64,11 +64,7 @@ class ArcSegment {
 
 	void drawSegment(PApplet applet) {
 		System.out.println("ArcSegment.drawSegment() SIZE: " + this.children.size());
-		for (ArcSegment child : this.children) {
-			/*applet.fill(child.colorHue, child.colorSat, 255);
-			applet.arc(this.x, this.y, child.w, child.h,
-					PApplet.radians(child.start), PApplet.radians(child.stop));*/
-			
+		for (ArcSegment child : this.children) {			
 			child.drawSegment(applet);
 		}
 		applet.fill(this.colorHue, this.colorSat, 255);
