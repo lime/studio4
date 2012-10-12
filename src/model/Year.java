@@ -1,5 +1,6 @@
 package model;
 
+import java.net.URL;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -38,6 +39,24 @@ public class Year extends CourseHierarchyNode {
 	/* Getters and setters */
 	public int getId() {
 		return this.id;
+	}
+
+	@Override
+	public String getTitle() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public String getDescription() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public URL getURL() {
+		// TODO Auto-generated method stub
+		return null;
 	}
 
 }

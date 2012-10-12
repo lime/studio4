@@ -31,4 +31,21 @@ public class Course extends CourseHierarchyNode {
 	public int getWeight() {
 		return this.ectsCredits;
 	}
+
+	@Override
+	public String getTitle() {
+		return this.name;
+	}
+
+	@Override
+	public String getDescription() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public URL getURL() {
+		// TODO Auto-generated method stub
+		return null;
+	}
 }
