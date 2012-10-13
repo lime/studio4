@@ -133,26 +133,21 @@
 
 </year>
 
-<year id="3+">
+<year id="3">
 
 	<major name="Ihminen ja vuorovaikutus (A2)" noppa="31">
 
-		<department name="Mediatekniikan laitos" noppa="9">
 			<course noppa="4" code="T-75.4900" id="optional">
 				<name>Havaitseminen</name>
 			</course>
 			<course noppa="5" code="T-75.4950" id="optional">
 				<name>Havaitsemisen kokeellinen tutkiminen L</name>
 			</course>
-		</department>
 		
-		<department name="Tuotantotalouden laitos" noppa="4">
 			<course noppa="4" code="TU-53.1351" id="optional">
 				<name>Ryhmät, kommunikaatio ja yhteistyö </name>
 			</course>		
-		</department>
 
-		<department name="Tietotekniikan laitos" noppa="12">
 			<course noppa="5" code="T-76.1143" id="optional">
 				<name>Tiedonhallintajärjestelmät</name>
 			</course>	
@@ -162,19 +157,15 @@
 			<course noppa="3" code="T-121.5300" id="optional">
 				<name>User Interface Construction</name>
 			</course>
-		</department>
 
-		<department name="Helsingin yliopisto" noppa="6">
 			<course noppa="6" code="Cog101" id="optional">
 				<name>Johdatus kognitiotieteeseen</name>
 			</course>		
-		</department>
 
 	</major>
 
 	<major name="Media (A2)" noppa="28">
 
-		<department name="Mediatekniikan laitos" noppa="28">
 			<course noppa="4" code="T-75.4900">
 				<name>Havaitseminen</name>
 			</course>
@@ -196,13 +187,11 @@
 			<course noppa="4" code="T-111.4800" id="optional">
 				<name>Sosiaalinen media</name>
 			</course>
-		</department>
 
 	</major>
 
 	<major name="Tietointensiivinen liiketoiminta (A2)" noppa="21">
 
-		<department name="Tuotantotalouden laitos" noppa="9">
 			<course noppa="2" code="TU-22.1308">
 				<name>Aalto Introduction to Services P</name>
 			</course>
@@ -224,9 +213,312 @@
 			<course noppa="3" code="TU-53.1360" id="optional">
 				<name>Cross-Cultural Management</name>
 			</course>
-		</department>
 
 	</major>
 
 </year>
+
+<minor name="Digitaaliset palvelut (A3)" noppa="28">
+
+	<department name="general" noppa="0">
+		<course noppa="0" code="HOPS-2">
+			<name>Henkilökohtainen opintosuunnitelma</name>
+		</course>
+	</department>
+
+	<department name="Tietotekniikan laitos" noppa="24">
+
+		<course noppa="3" code="T-106.4300">
+			<name>Web Software Development</name>
+		</course>
+		<course noppa="5" code="T-106.5250">
+			<name>Distributed Systems</name>
+		</course>
+		<course noppa="6" code="T-106.5750">
+			<name>Aalto Service Camp L</name>
+		</course>
+		<course noppa="5" code="T-110.5130" id="optional">
+			<name>Mobile Systems Programming</name>
+		</course>
+
+		<course noppa="5" code="T-76.1143" id="optional">
+			<name>Tiedonhallintajärjestelmät</name>
+		</course>
+	
+	</department>
+
+	<department name="Tietojenkäsittelytieteen laitos" noppa="4">
+		<course noppa="4" code="T-61.2010" id="optional">
+			<name>Datasta tietoon</name>
+		</course>	
+	</department>
+
+</minor>
+
+<minor name="Human Media Interaction (A3)" noppa="37">
+
+	<department name="general" noppa="0">
+		<course noppa="0" code="HOPS-2">
+			<name>Henkilökohtainen opintosuunnitelma</name>
+		</course>
+	</department>
+
+	<choice>
+		<department name="Mediatekniikan laitos" noppa="7">
+	
+			<course noppa="5" code="Inf-0.4101">
+				<name>Informaatioverkostot: Studio X</name>
+			</course>
+	
+			<course noppa="2" code="T-75.5700">
+				<name>Visuaalisen median projektityöt L</name>
+			</course>
+		</department>
+		<department name="Tietotekniikan laitos" noppa="2"> 
+			<course noppa="2" code="T-76.4115">
+				<name>Ohjelmistokehitysprojekti</name>
+			</course>
+		</department>
+	</choice>
+
+	<department name="Tietojenkäsittelytieteen laitos" noppa="5">
+		<course noppa="5" code="T-61.5010" id="optional">
+			<name>Information Visualization P</name>
+		</course>
+
+	</department>
+
+	<department name="Mediatekniikan laitos" noppa="23">
+		<course noppa="4" code="T-75.4300" id="optional">
+			<name>Semanttinen web L</name>
+		</course>
+		<course noppa="5" code="T-75.5200" id="optional">
+			<name>Visuaalisen median laatu L</name>
+		</course>
+		<course noppa="4" code="T-111.5400" id="optional">
+			<name>Keinotodellisuus</name>
+		</course>
+		<course noppa="4" code="T-111.5900" id="optional">
+			<name>Experimental User Interfaces P</name>
+		</course>
+		<course noppa="6" code="24127" id="optional">
+			<name>Informaatiodesign*</name>
+		</course>
+	</department>
+	
+</minor>
+
+<minor name="Ihmisläheiset tietojärjestelmät (A3)" noppa="61">
+
+	<department name="general" noppa="0">
+		<course noppa="0" code="HOPS-2">
+			<name>Henkilökohtainen opintosuunnitelma</name>
+		</course>
+	</department>
+
+	<department name="Tuotantotalouden laitos" noppa="30">
+		<course noppa="5" code="TU-53.1510">
+			<name>Työpsykologian ja johtamisen erikoistyö</name>
+		</course>
+		<course noppa="4" code="TU-53.1211" id="optional">
+			<name>Organisaation kehittäminen</name>
+		</course>
+		<course noppa="3" code="TU-53.1251" id="optional">
+			<name>Hyvinvointi ja kuormittuminen työorganisaatioissa</name>
+		</course>
+		<course noppa="4" code="TU-53.1310" id="optional">
+			<name>Advanced course on knowledge and competence management P</name>
+		</course>	
+		<course noppa="3" code="TU-53.1331">
+			<name>Oppiminen ja oppimisympäristöt </name>
+		</course>
+		<course noppa="3" code="TU-53.1390" id="optional">
+			<name>Contemporary topics on knowledge and competence management P</name>
+		</course>
+		<course noppa="4" code="TU-53.1410" id="optional">
+			<name>Sosioteknisten järjestelmien perusteet</name>
+		</course>
+		<course noppa="4" code="TU-53.1451" id="optional">
+			<name>Turvallisuuskriittisten organisaatioiden johtamisen erityispiirteet L</name>
+		</course>
+
+
+	</department>
+
+	<department name="Tietotekniikan laitos" noppa="17">
+
+		<course noppa="3" code="T-121.5151">
+			<name>Methods for User-Centred Product Development</name>
+		</course>
+		<course noppa="3" code="T-121.5300">
+			<name>User Interface Construction</name>
+		</course>
+		<course noppa="8" code="T-121.5450" id="optional">
+			<name>Interaction Design and Evaluation P</name>
+		</course>
+		<course noppa="3" code="T-121.5900" id="optional">
+			<name>Seminar on User Interfaces and Usability</name>
+		</course>
+	
+	</department>
+
+	<choice>
+		<department name="Mediatekniikan laitos" noppa="5">
+			<course noppa="5" code="Inf-0.4101" id="optional">
+				<name>Informaatioverkostot: Studio X</name>
+			</course>
+		</department>
+		<department name="Tietotekniikan laitos" noppa="9">
+			<course noppa="9" code="T-121.5350" id="optional">
+				<name>Strategic User-Centred Design P</name>
+			</course>
+		</department>
+	</choice>
+
+</minor>
+
+<minor name="Liiketoimintaverkostot (A3)" noppa="36">
+
+
+	<department name="general" noppa="0">
+		<course noppa="0" code="HOPS-2">
+			<name>Henkilökohtainen opintosuunnitelma</name>
+		</course>
+	</department>
+
+	<department name="Tuotantotalouden laitos" noppa="31">
+		<course noppa="4" code="TU-124.5100">
+			<name>Verkottuneet liiketoimintaprosessit ja -mallit</name>
+		</course>
+		<course noppa="3" code="TU-124.5210">
+			<name>Liiketoimintaverkostojen kehittämismenetelmät</name>
+		</course>
+		<choice>
+			<course noppa="5" code="TU-124.5310">
+				<name>Liiketoimintaverkostojen kehittäminen, projektityö</name>
+			</course>
+			<course noppa="5" code="TU-124.5710">
+				<name>Global Virtual Collaboration Project P</name>
+			</course>
+		</choice>
+		<course noppa="5" code="TU-124.5310" id="optional">
+			<name>Liiketoimintaverkostojen kehittäminen, projektityö</name>
+		</course>
+	
+		<course noppa="5" code="TU-124.5410" id="optional">
+			<name>Research Perspectives on Business Networks P</name>
+		</course>
+		<course noppa="1" code="TU-124.5510" id="optional">
+			<name>Diplomityöseminaari</name>
+		</course>
+		<course noppa="3" code="TU-124.5600" id="optional">
+			<name>Yrityspeli L</name>
+		</course>
+		<course noppa="5" code="TU-124.5710" id="optional">
+			<name>Global Virtual Collaboration Project P</name>
+		</course>
+
+
+	</department>
+
+
+	<department name="Mediatekniikan laitos" noppa="5">
+		<course noppa="5" code="Inf-0.4101" id="optional">
+			<name>Informaatioverkostot: Studio X</name>
+		</course>
+	</department>
+
+</minor>
+
+
+
+<minor name="Human Media Interaction (A3)" noppa="30">
+
+	<department name="general" noppa="0">
+		<course noppa="0" code="HOPS-2">
+			<name>Henkilökohtainen opintosuunnitelma</name>
+		</course>
+	</department>
+
+
+	<department name="Mediatekniikan laitos" noppa="30">
+	
+		<choice>
+			<course noppa="5" code="Inf-0.4101">
+				<name>Informaatioverkostot: Studio X</name>
+			</course>
+
+			<course noppa="6" code="T-111.5077">
+				<name>Sisällöntuotannon projektityö</name>
+			</course>
+		</choice>
+		<course noppa="4" code="T-111.5006">
+			<name>Konseptointi ja käsikirjoitus</name>
+		</course>
+		<course noppa="5" code="T-111.5007" id="optional">
+			<name>Multimedian projektityö</name>
+		</course>
+		<course noppa="5" code="T-111.5015" id="optional">
+			<name>Elokuvakerronta</name>
+		</course>
+		<course noppa="3" code="T-111.5020" id="optional">
+			<name>Kuvallinen ilmaisu</name>
+		</course>
+		<course noppa="3" code="T-111.5025" id="optional">
+			<name>Äänisuunnittelu</name>
+		</course>
+		<course noppa="5" code="T-111.5030" id="optional">
+			<name>3D-tuotanto</name>
+		</course>
+
+	</department>
+
+	
+</minor>
+
+
+
+<minor name="Tietoyritykset (A3)" noppa="39">
+
+
+	<department name="general" noppa="0">
+		<course noppa="0" code="HOPS-2">
+			<name>Henkilökohtainen opintosuunnitelma</name>
+		</course>
+	</department>
+
+	<department name="Tuotantotalouden laitos" noppa="34">
+		<course noppa="4" code="TU-53.1310">
+			<name>Advance course on knowledge and competence management P</name>
+		</course>
+		<course noppa="5" code="TU-22.1321">
+			<name>Industrial Service Operations P</name>
+		</course>
+		<course noppa="5" code="TU-91.2004" id="optional">
+			<name>Advanced Strategic Management</name>
+		</course>
+		<course noppa="5" code="TU-22.1155" id="optional">
+			<name>Teollisuustalouden erikoistyö</name>
+		</course>
+		<course noppa="5" code="TU-53.1510" id="optional">
+			<name>Työpsykologian ja johtamisen erikoistyö</name>
+		</course>
+		<course noppa="5" code="TU-91.2037" id="optional">
+			<name>Special Study in Strategic Management</name>
+		</course>
+		<course noppa="5" code="TU-124.5600 " id="optional">
+			<name>Yrityspeli L</name>
+		</course>
+
+	</department>
+
+	<department name="Mediatekniikan laitos" noppa="5">
+		<course noppa="5" code="Inf-0.4101" id="optional">
+			<name>Informaatioverkostot: Studio X</name>
+		</course>
+	</department>
+
+</minor>
 </studies>
+
+

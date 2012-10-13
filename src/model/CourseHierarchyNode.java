@@ -21,7 +21,7 @@ public abstract class CourseHierarchyNode {
 
 	public abstract List<? extends CourseHierarchyNode> getChildren();
 	
-	public boolean hasChildren() {
+	public final boolean hasChildren() {
 		return this.getChildren() != null;
 	}
 		

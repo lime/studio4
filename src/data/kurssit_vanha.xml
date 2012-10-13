@@ -1,0 +1,232 @@
+<?xml version="1.0" encoding="utf-8"?>
+<studies name="Informaatioverkostojen koulutusohjelma">
+<year id="1" noppa="59">
+
+	<department name="Matematiikan ja systeemianalyysin laitos" noppa="20">
+		<course noppa="10" code="Mat-1.1110">
+			<name>Matematiikan peruskurssi C1</name>
+		</course>
+		<course noppa="10" code="Mat-1.1120">
+			<name>Matematiikan peruskurssi C2</name>
+		</course>
+	</department>
+
+	<department name="Tietotekniikan laitos" noppa="16">
+		<course noppa="10" code="T-106.1250">
+			<name>Informaatioverkostojen ohjelmointikurssi</name>
+		</course>
+		
+		<course noppa="2" code="T-106.1111">
+			<name>Johdatus opiskeluun ja tietojärjestelmiin</name>
+		</course>
+		<course noppa="4" code="T-106.2001">
+			<name>Informaatioverkostot: Studio 1</name>
+		</course>
+		
+	</department>
+
+	<department name="Kauppakorkeakoulu" noppa="4">
+		<course noppa="4" code="T71C00800">
+			<name>Viestinnän ja mediatutkimuksen perusteet</name>
+		</course>
+	</department>
+
+	<department name="Mediatekniikan laitos" noppa="10">
+		<course noppa="3" code="T-111.1100">
+			<name>Digitaalisen median työvälineet</name>
+		</course>
+		<course noppa="2" code="T-75.2300">
+			<name>Informaatioverkostot: Studio 2</name>
+		</course>
+		<course noppa="5" code="Inf-0.1220">
+			<name>Sosiologia</name>
+		</course>
+	</department>
+
+	<department name="Tuotantotalouden laitos" noppa="7">
+		<course noppa="4" code="TU-22.1101">
+			<name>Tuotantotalouden peruskurssi</name>
+		</course>
+		<course noppa="3" code="TU-91.2500">
+			<name>Marketing</name>
+		</course>
+	</department>
+
+	<department name="Kielikeskus" noppa="2">
+		<course noppa="1" code="Kie-98.5001/7001">
+			<name>Toisen kotimaisen kielen kokeen (ruotsi/suomi) kirjallinen osio</name>
+		</course>
+		<course noppa="1" code="Kie-98.5002/7002">
+			<name>Toisen kotimaisen kielen kokeen (ruotsi/suomi) suullinen osio</name>
+		</course>
+	</department>
+
+</year>
+
+
+
+<year id="2" noppa="63">
+
+	<department name="Matematiikan ja systeemianalyysin laitos" noppa="5">
+		<course noppa="5" code="Mat-1.1110">
+			<name>Matematiikan peruskurssi C3-I</name>
+		</course>
+	</department>
+
+	<department name="Tietotekniikan laitos" noppa="15">
+		<course noppa="5" code="T-121.2100">
+			<name>Johdatus käyttäjäkeskeiseen tuotekehitykseen</name>
+		</course>
+		<course noppa="3" code="T-121.3110">
+			<name>Käyttäjäkeskeisen tuotekehityksen harjoitustyöt</name>
+		</course>
+		<course noppa="3" code="T-110.1100">
+			<name>Johdatus tietoliikenteeseen ja multimediatekniikkaan</name>
+		</course>
+		<course noppa="4" code="T-76.3601" id="optional" dupe="Havaitseminen">
+			<name>Introduction to Software Engineering</name>
+		</course>
+		
+	</department>
+
+	<department name="Mediatekniikan laitos" noppa="25">
+
+		<course noppa="3" code="T-75.1110">
+			<name>XML-kuvauskielten perusteet</name>
+		</course>
+		<course noppa="4" code="T-75.4900" id="optional" dupe="Introduction to Software Engineering">
+			<name>Havaitseminen</name>
+		</course>
+		<course noppa="5" code="T-111.2211">
+			<name>Informaatioverkostot: Studio 4</name>
+		</course>
+		<course noppa="5" code="Inf-0.1202">
+			<name>Filosofia</name>
+		</course>
+		<course noppa="5" code="Inf-0.1300">
+			<name>Estetiikka</name>
+		</course>
+		<course noppa="3" code="Inf-0.3101 ">
+			<name>Verkostojen perusteet</name>
+		</course>
+	</department>
+
+	<department name="Tuotantotalouden laitos" noppa="18">
+
+		<course noppa="4" code="TU-53.1010">
+			<name>Työpsykologian ja johtamisen perusteet</name>
+		</course>
+		<course noppa="4" code="TU-53.1030">
+			<name>Knowledge and competence management</name>
+		</course>
+		<course noppa="4" code="TU-22.2600">
+			<name>Informaatioverkostot: Studio 3</name>
+		</course>
+		<course noppa="3" code="TU-22.1120">
+			<name>Projektien suunnittelu ja ohjaus</name>
+		</course>
+		<course noppa="3" code="TU-22.1130">
+			<name>Laskentatoimi ja kannattavuus</name>
+		</course>
+
+	</department>
+
+</year>
+
+<year id="3+">
+
+	<major name="Ihminen ja vuorovaikutus (A2)" noppa="31">
+
+		<department name="Mediatekniikan laitos" noppa="9">
+			<course noppa="4" code="T-75.4900" id="optional">
+				<name>Havaitseminen</name>
+			</course>
+			<course noppa="5" code="T-75.4950" id="optional">
+				<name>Havaitsemisen kokeellinen tutkiminen L</name>
+			</course>
+		</department>
+		
+		<department name="Tuotantotalouden laitos" noppa="4">
+			<course noppa="4" code="TU-53.1351" id="optional">
+				<name>Ryhmät, kommunikaatio ja yhteistyö </name>
+			</course>		
+		</department>
+
+		<department name="Tietotekniikan laitos" noppa="12">
+			<course noppa="5" code="T-76.1143" id="optional">
+				<name>Tiedonhallintajärjestelmät</name>
+			</course>	
+			<course noppa="4" code="T-76.3601" id="optional">
+				<name>Introduction to Software Engineering</name>
+			</course>
+			<course noppa="3" code="T-121.5300" id="optional">
+				<name>User Interface Construction</name>
+			</course>
+		</department>
+
+		<department name="Helsingin yliopisto" noppa="6">
+			<course noppa="6" code="Cog101" id="optional">
+				<name>Johdatus kognitiotieteeseen</name>
+			</course>		
+		</department>
+
+	</major>
+
+	<major name="Media (A2)" noppa="28">
+
+		<department name="Mediatekniikan laitos" noppa="28">
+			<course noppa="4" code="T-75.4900">
+				<name>Havaitseminen</name>
+			</course>
+			<course noppa="4" code="T-111.4360">
+				<name>Design of WWW Services</name>
+			</course>
+			<course noppa="4" code="T-111.5006">
+				<name>Konseptointi ja käsikirjoitus</name>
+			</course>
+			<course noppa="4" code="T-75.4100" id="optional">
+				<name>Digitaalinen kuvatekniikka</name>
+			</course>
+			<course noppa="4" code="T-75.4210" id="optional">
+				<name>Media Production and Use Processes</name>
+			</course>
+			<course noppa="4" code="T-111.4310" id="optional">
+				<name>Vuorovaikutteinen tietokonegrafiikka</name>
+			</course>
+			<course noppa="4" code="T-111.4800" id="optional">
+				<name>Sosiaalinen media</name>
+			</course>
+		</department>
+
+	</major>
+
+	<major name="Tietointensiivinen liiketoiminta (A2)" noppa="21">
+
+		<department name="Tuotantotalouden laitos" noppa="9">
+			<course noppa="2" code="TU-22.1308">
+				<name>Aalto Introduction to Services P</name>
+			</course>
+			<course noppa="4" code="TU-53.1320">
+				<name>Organizations and Networks</name>
+			</course>
+			<course noppa="4" code="TU-91.1011">
+				<name>Principles of Strategic Management</name>
+			</course>
+			<course noppa="3" code="TU-91.2003">
+				<name>New Venture Development I</name>
+			</course>
+			<course noppa="2" code="TU-124.4100">
+				<name>Informaatioverkostot: Networked Business Forum</name>
+			</course>
+			<course noppa="3" code="TU-22.1302" id="optional">
+				<name>Quality Management</name>
+			</course>
+			<course noppa="3" code="TU-53.1360" id="optional">
+				<name>Cross-Cultural Management</name>
+			</course>
+		</department>
+
+	</major>
+
+</year>
+</studies>

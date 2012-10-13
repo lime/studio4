@@ -22,15 +22,24 @@ public class Year extends CourseHierarchyNode {
 	 */
 	@XmlElement(name = "department")
 	private List<Department> departments = new ArrayList<Department>();
+	/**
+	 * List of major subjects with courses during the year.
+	 */
+	@XmlElement(name = "major")
+	private List<Major> majors = new ArrayList<Major>();
 
 	@Override
-	public List<Department> getChildren() {
-		return this.getDepartments();
+	public List<? extends CourseHierarchyNode> getChildren() {
+		if(!this.departments.isEmpty()) {
+			return this.departments;
+		} else if(!this.majors.isEmpty()){
+			return this.majors;
+		} else {
+			return null;
+		}
+		
 	}
 
-	public List<Department> getDepartments() {
-		return this.departments;
-	}
 
 	public int getEctsCredits() {
 		return this.ectsCredits;
@@ -44,13 +53,18 @@ public class Year extends CourseHierarchyNode {
 	@Override
 	public String getTitle() {
 		// TODO Auto-generated method stub
-		return null;
+		return "Vuosi " + this.id;
 	}
 
 	@Override
 	public String getDescription() {
 		// TODO Auto-generated method stub
-		return null;
+		if(!this.departments.isEmpty()) {
+			return "Opintopisteet: " + this.ectsCredits;
+		} else {
+			return null;
+		}
+
 	}
 
 	@Override

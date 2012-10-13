@@ -4,11 +4,13 @@ import java.net.URL;
 import java.util.ArrayList;
 import java.util.List;
 
-import javax.xml.bind.annotation.*;
+import javax.xml.bind.annotation.XmlAttribute;
+import javax.xml.bind.annotation.XmlElement;
 
-public class Department extends CourseHierarchyNode {
+public class Major extends CourseHierarchyNode{
+	
 	/**
-	 * Name of the department.
+	 * Name of the major.
 	 */
 	@XmlAttribute
 	private String name;
@@ -17,36 +19,14 @@ public class Department extends CourseHierarchyNode {
 	 */
 	@XmlAttribute(name = "noppa")
 	private int ectsCredits;
-	/**
-	 * 
-	 */
+
+	
 	@XmlElement(name = "course")
 	private List<Course> courses = new ArrayList<Course>();
 
 	@Override
 	public List<Course> getChildren() {
-		return this.getCourses();
-	}
-
-	/**
-	 * @return the courses
-	 */
-	public List<Course> getCourses() {
 		return this.courses;
-	}
-
-	/**
-	 * @return the ectsCredits
-	 */
-	public int getEctsCredits() {
-		return this.ectsCredits;
-	}
-
-	/**
-	 * @return the name
-	 */
-	public String getName() {
-		return this.name;
 	}
 
 	@Override
@@ -62,7 +42,15 @@ public class Department extends CourseHierarchyNode {
 
 	@Override
 	public URL getURL() {
-		// TODO Auto-generated method stub
 		return null;
 	}
+
+	/* (non-Javadoc)
+	 * @see model.CourseHierarchyNode#getWeight()
+	 */
+	@Override
+	public int getWeight() {
+		return super.getWeight();
+	}
+
 }
